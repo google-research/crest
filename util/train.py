@@ -23,9 +23,9 @@ import time
 from data import cifar
 from model import resnet as model
 from third_party import ema
-import class_imbalanced_ssl.util.metric as util_metric
-import class_imbalanced_ssl.util.scheduler as util_scheduler
-import class_imbalanced_ssl.util.util as util
+import util.metric as util_metric
+import util.scheduler as util_scheduler
+import util.util as util
 import numpy as np
 import tensorflow as tf
 from tqdm import trange
