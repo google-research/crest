@@ -150,7 +150,8 @@ flags.DEFINE_float(
     name='weight_unsup', default=1.0, help='unsupervised loss coefficient.')
 flags.DEFINE_float(name='threshold', default=0.95, help='confidence threshold.')
 flags.DEFINE_float(
-    name='temperature', default=1.0, help='temperature scaling for soft label.')
+    name='temperature', default=0.0, 
+    help='temperature scaling for soft label. 0.0 for hard label.')
 flags.DEFINE_float(name='mixup_beta', default=0.75, help='mixup parameter.')
 # Distribution alignment.
 flags.DEFINE_boolean(
