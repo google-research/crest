@@ -30,6 +30,8 @@ python -m train_and_eval_loop \
   --percent_labeled=0.1 \
   --fold=1 \
   --num_epoch=64 \
+  --unlab_ratio=7 \
+  --temperature=0 \
   --num_generation=6 \
   --sched_level=1 \
   --dalign_t=0.5 \
