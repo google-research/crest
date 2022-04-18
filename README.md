@@ -4,7 +4,7 @@ Code for the paper: "[CReST: A Class-Rebalancing Self-Training Framework for Imb
 
 -   **This is not an officially supported Google product.**
 
-## Install dependencies
+## Install dependencies with virtualenv(flag-1)
 
 ```bash
 sudo apt install python3-dev python3-virtualenv python3-tk imagemagick
@@ -12,10 +12,17 @@ virtualenv -p python3 --system-site-packages env3
 . env3/bin/activate
 pip install -r requirements.txt
 ```
+-   The code has been tested on Ubuntu 18.04 with CUDA 10.2.(see flag-1)
 
--   The code has been tested on Ubuntu 18.04 with CUDA 10.2.
+## Install dependencies with conda(flag-2)
+```bash
+conda-env create -f requirements-windows.txt -n crest
+conda activate crest
+```
+-   The code has been tested on Windows 11 with CUDA 11.3(see flag-2) and python=3.8.13 tensorflow-gpu=2.8.0
+  
 
-## Environment setting
+## Environment setting (or run exportenvs.bat)
 
 ```bash
 . env3/bin/activate
@@ -33,7 +40,7 @@ Download or generate the datasets as follows:
 -  Long-tailed CIFAR10 and CIFAR100: Follow the [steps](https://github.com/richardaecn/class-balanced-loss#datasets) to download the datasets prepared by Cui et al. Put it under `${ML_DATA}/cifar-lt`, for example, `${ML_DATA}/cifar-lt/cifar-10-data-im-0.1`.
 
 
-## Running experiment on Long-tailed CIFAR10, CIFAR100
+## Running experiment on Long-tailed CIFAR10, CIFAR100 (or run run.bat)
 
 Run [MixMatch](mixmatch.py) ([paper](https://arxiv.org/abs/1905.02249)) and [FixMatch](fixmatch.py) ([paper](https://arxiv.org/abs/2001.07685)):
 
