@@ -1,0 +1,2 @@
+@REM An example run for CIFAR10LT using CReST+
+python -m train_and_eval_loop --model_dir=./tmp/model --method=fixmatch -dataset=cifar10lt --input_shape=32,32,3 --class_im_ratio=0.01 --percent_labeled=0.1 --fold=1 --num_epoch=64 --unlab_ratio=7 --temperature=0 --num_generation=6 --sched_level=1 --dalign_t=0.5 --how_dalign=adaptive --do_distalign=True
