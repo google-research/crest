@@ -6,7 +6,7 @@ numpy>=1.16.0
 sklearn
 six>=1.12.0
 tqdm
-Pillow==6.2.1
+Pillow==9.3.0
 tensorflow-gpu
 tensorflow-addons
 tensorflow-probability
